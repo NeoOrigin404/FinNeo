@@ -154,8 +154,36 @@ Les phases pourront être réordonnées après la conception ; privilégier un M
 
 ## Démarrage du projet
 
-Le dépôt doit inclure les instructions d'installation, de configuration locale, les variables d'environnement nécessaires (avec fichier `.env.example` sans secrets), les migrations, les tests et le déploiement. Ces instructions seront rédigées une fois la stack validée.
+Stack validée (Phase 0) : Next.js (App Router) + TypeScript strict + Tailwind CSS ; Supabase (Postgres UE, Auth, RLS) et Drizzle à partir du lot L1.
 
+### Prérequis
+- Node.js 20.9 ou plus (testé avec Node 22) et npm.
+
+### Installation et lancement local
+```bash
+npm ci
+npm run dev        # http://localhost:3000
+```
+
+### Qualité
+```bash
+npm run lint
+npm run typecheck
+npm run format:check
+npm test
+npm run build
+```
+
+### Configuration
+Copier `.env.example` vers `.env.local` (jamais versionné). Aucune variable n'est requise au lot L0.
+
+### Déploiement
+Voir [`docs/deploiement-vercel.md`](./docs/deploiement-vercel.md).
+
+### Workflow Git
+`feat/*` → pull request vers `dev` → `staging` → `main` (production). La CI (lint, typecheck, format, tests, build, audit, scan de secrets) doit être verte avant fusion.
+
+> Aucune donnée réelle (soldes, numéros de contrat, échéanciers) ne doit être committée : elles sont saisies uniquement dans l'application déployée.
 
 ## Principes de décision
 

@@ -1,6 +1,6 @@
 # FinNeo — Phase 0 : Conception
 
-> Statut : **PROPOSITION — en attente de validation du propriétaire**. Aucun code applicatif n'a été écrit.
+> Statut : **VALIDÉE par le propriétaire le 21/11/2026** (D1 à D12 acceptées ; D10 : quote-part 100 % par défaut). Développement en cours : lot L0.
 > Date : 21/11/2026. Les wireframes sont dans [`wireframes.md`](./wireframes.md).
 > Règle : aucune donnée réelle (soldes, numéros de contrat, échéanciers bancaires) n'est versionnée dans ce dépôt. Les exemples ci-dessous sont fictifs.
 
