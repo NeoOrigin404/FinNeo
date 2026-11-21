@@ -1,0 +1,23 @@
+# dépendances / build
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets et données personnelles : ne jamais versionner
+.env
+.env.*
+!.env.example
+*.pem
+exports/
+data/
+*.pdf
+*.xlsx
+*.csv
+
+# divers
+.DS_Store
+.vercel
+npm-debug.log*
