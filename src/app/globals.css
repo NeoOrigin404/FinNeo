@@ -22,20 +22,21 @@
 }
 
 .dark {
-  --bg: #0b1020;
-  --bg-accent: #141c3a;
-  --surface: #141a2e;
-  --surface-glass: rgb(20 26 46 / 0.6);
-  --border: rgb(255 255 255 / 0.1);
-  --fg: #eef2ff;
-  --fg-muted: #a5b0cc;
-  --primary: #8ea2ff;
-  --primary-fg: #0b1020;
+  /* Anthracite neutre : gris sans teinte violette */
+  --bg: #141517;
+  --bg-accent: #1c1d20;
+  --surface: #1f2023;
+  --surface-glass: rgb(31 32 35 / 0.6);
+  --border: rgb(255 255 255 / 0.09);
+  --fg: #ececee;
+  --fg-muted: #a1a3a9;
+  --primary: #60a5fa;
+  --primary-fg: #0b1220;
   --positive: #4ade80;
   --negative: #f87171;
   --warning: #fbbf24;
-  --ring: #8ea2ff;
-  --shadow: 0 8px 30px rgb(0 0 0 / 0.35);
+  --ring: #60a5fa;
+  --shadow: 0 8px 30px rgb(0 0 0 / 0.4);
 }
 
 @theme inline {
